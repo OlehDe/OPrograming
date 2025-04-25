@@ -14,5 +14,5 @@ class Clock:
     def __check_time(time):
         return isinstance(time, int) and 0 <= time < 100000
 
-clock = Clock(4530)
+clock = Clock(14)
 print("Поточний час:", clock.get_time())
