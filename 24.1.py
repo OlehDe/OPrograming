@@ -2,12 +2,12 @@ import re
 
 class CardCheck:
     @staticmethod
-    def check_card_number(card_number: str) -> bool:
+    def check_card_number(card_number: str):
         pattern = r'^\d{4}(-\d{4}){3}$'
         return bool(re.fullmatch(pattern, card_number))
 
     @classmethod
-    def check_name(cls, name: str) -> bool:
+    def check_name(cls, name: str):
         pattern = r'^[A-Z]+ [A-Z]+$'
         return bool(re.fullmatch(pattern, name))
 
