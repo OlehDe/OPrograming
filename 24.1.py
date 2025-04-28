@@ -3,7 +3,7 @@ import re
 class CardCheck:
     @staticmethod
     def check_card_number(card_number: str) -> bool:
-        pattern = r'^\d{4}(-\d{4}){4}$'
+        pattern = r'^\d{4}(-\d{4}){3}$'
         return bool(re.fullmatch(pattern, card_number))
 
     @classmethod
