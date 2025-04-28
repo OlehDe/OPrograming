@@ -75,12 +75,12 @@ class BankSystem:
 if __name__ == "__main__":
     bank_system = BankSystem()
 
-    user1 = bank_system.create_user("John", "Doe", 35)
+    user1 = bank_system.create_user("Vasya", "Yo", 35)
     account1 = bank_system.create_account(user1, 1000)
     bank_system.deposit(account1, 500)
     bank_system.withdraw(account1, 200)
 
-    user2 = bank_system.create_user("Alice", "Smith", 28)
+    user2 = bank_system.create_user("Dima", "Go", 28)
     account2 = bank_system.create_account(user2, 1500)
     bank_system.transfer(account1, account2, 300)
 
